@@ -1,4 +1,4 @@
-package novi.blackjack;
+package blackjackgames;
 
 import java.util.Random;
 import java.util.Stack;

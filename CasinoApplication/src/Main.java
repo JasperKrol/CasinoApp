@@ -1,10 +1,8 @@
-package novi;
+import blackjackgames.BlackJackGame;
+import blackjackgames.LowDeckBlackJack;
 
 import java.util.Scanner;
 
-import novi.blackjack.BlackJackGame;
-import novi.blackjack.LowDeckBlackJack;
-import novi.higherlower.HigherLowerGame;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package novi.blackjack;
+package blackjackgames;
 
 import java.util.Scanner;
 

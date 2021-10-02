@@ -1,4 +1,4 @@
-package novi.blackjack;
+package blackjackgames;
 
 public class Player {
     //Attributes

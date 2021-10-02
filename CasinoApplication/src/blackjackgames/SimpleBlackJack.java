@@ -1,27 +1,27 @@
-package novi.blackjack;
+package blackjackgames;
 
 import java.util.Scanner;
 
-public class LowDeckBlackJack extends BlackJackGame {
-
-    public LowDeckBlackJack (Scanner inputScanner) {
-        super(inputScanner, new LowDeck());
+public class SimpleBlackJack extends BlackJackGame {
+    //extenden van de blackjack game en we nemen de constructor over, dus alles wat in de super staat,
+    // moet in de constructor van blackjack staan om te accepteren
+    public SimpleBlackJack (Scanner inputScanner) {
+        super(inputScanner, new SimpleDeck());
     }
 
+    //abstract methode uit blackjack game gebruiken en ombouwen
     public void runGameLoop() {
         renderTableState();
 
         if (player.isBust() || player.isStaying() && player.getHandValue() <= dealer.getHandValue()) {
             System.out.println("You lost!");
             gameIsRunning = false;
-            gameIsWon = false;
             return;
         }
 
         if (dealer.isBust() || dealer.isStaying() && player.getHandValue() > dealer.getHandValue()) {
             System.out.println("You won!");
             gameIsRunning = false;
-            gameIsWon = true;
             return;
         }
 
