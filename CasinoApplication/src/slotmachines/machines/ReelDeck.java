@@ -21,7 +21,7 @@ public class ReelDeck {
         }
     }
 
-    private String render() {
+    public String render() {
         var renderedReels = "";
 
         for (Reel reel : reels) {
